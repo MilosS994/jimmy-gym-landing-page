@@ -2,11 +2,14 @@
 module.exports = {
   content: ["./index.html", "./app.js"],
   theme: {
-    // Centering container and giving it some padding by default
+    // Container
     container: {
       center: true,
-      padding: {
-        DEFAULT: "1rem",
+      padding: "1rem",
+      screens: {
+        lg: "1124px",
+        xl: "1124px",
+        "2xl": "1124px",
       },
     },
     extend: {
@@ -21,7 +24,7 @@ module.exports = {
         textHighlight: "#0EA5E9",
         bgDark: "#334155",
         bgLight: "#E9EDFC",
-        lightPurple: "#6366F1",
+        lightPurple: "#DD9FF1",
         lightBlue: "#DEF1FF",
         darkBlue: "#06B6D4",
         lightRose: "#FCDAEB",

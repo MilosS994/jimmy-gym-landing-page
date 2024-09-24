@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jimmy Gym</title>
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="output.css" />
 
@@ -22,5 +31,49 @@
     <!-- Script -->
     <script src="app.js" defer></script>
   </head>
-  <body></body>
+  <body class="font-figtree bg-bgLight">
+    <!-- Header -->
+    <header>
+      <nav class="container flex items-center py-4 mt-4 sm:mt-8">
+        <div class="py-1 w-40 lg:w-52 transition-all ease-linear duration-200">
+          <img src="assets/logo.png" alt="logo" />
+        </div>
+        <ul
+          class="hidden sm:flex flex-1 justify-end items-center gap-6 text-textDark uppercase text-sm lg:text-base"
+        >
+          <li
+            class="py-2 px-1 rounded-md hover:bg-lightPurple hover:text-textLight transition-all ease-linear duration-200 cursor-pointer"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="py-2 px-1 rounded-md hover:bg-lightPurple hover:text-textLight transition-all ease-linear duration-200 cursor-pointer"
+          >
+            <a href="#">Programs</a>
+          </li>
+          <li
+            class="py-2 px-1 rounded-md hover:bg-lightPurple hover:text-textLight transition-all ease-linear duration-200 cursor-pointer"
+          >
+            <a href="#">Membership</a>
+          </li>
+          <li
+            class="py-2 px-1 rounded-md hover:bg-lightPurple hover:text-textLight transition-all ease-linear duration-200 cursor-pointer"
+          >
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <!-- Hamburger menu -->
+        <div class="flex sm:hidden flex-1 justify-end">
+          <i
+            class="fa-solid fa-bars text-base text-textDark mr-[20px] cursor-pointer"
+          ></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="relative">
+      <div class="container flex flex-col-reverse"></div>
+    </section>
+  </body>
 </html>
