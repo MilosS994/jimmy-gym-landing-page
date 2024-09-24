@@ -26,15 +26,15 @@
     />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
 
     <!-- Script -->
     <script src="app.js" defer></script>
   </head>
-  <body class="font-figtree bg-bgLight">
+  <body class="font-figtree bg-lightBlue">
     <!-- Header -->
     <header>
-      <nav class="container flex items-center py-4 mt-4 sm:mt-8">
+      <nav class="container flex items-center py-4 mt-4 sm:mt-8 shadow-sm">
         <div class="py-1 w-40 lg:w-52 transition-all ease-linear duration-200">
           <img src="assets/logo.png" alt="logo" />
         </div>
@@ -72,8 +72,29 @@
     </header>
 
     <!-- Hero section -->
-    <section class="relative">
-      <div class="container flex flex-col-reverse"></div>
+    <section class="relative bg-gradient-to-b from-lightBlue to-lightPurple">
+      <div
+        class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-12 lg:mt-14"
+      >
+        <div class="w-3/5">
+          <img src="assets/dumbells.png" alt="dumbells" />
+        </div>
+        <div
+          class="flex-1 flex flex-col items-center justify-center gap-10 text-textDark text-center lg:text-left"
+        >
+          <h1 class="uppercase text-5xl">
+            Unleash your full
+            <span class="font-semibold tracking-widest">potential</span>.
+          </h1>
+          <h2 class="text-3xl">Your Journey to Fitness Starts Here.</h2>
+          <button
+            type="button"
+            class="btnPrimary hover:bg-bgLight hover:text-textDark hover:scale-110 hover:shadow-2xl transition-all duration-300 ease-linear"
+          >
+            Join
+          </button>
+        </div>
+      </div>
     </section>
   </body>
 </html>
